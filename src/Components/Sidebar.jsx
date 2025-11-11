@@ -12,7 +12,9 @@ function Sidebar() {
                     if (val.isDropdown) {
                         return (
                             <li key={key} className="dropdown">
-                                <span className="dropdown-title">{val.title}</span>
+                                <Link to={val.link} className="dropdown-title">
+                                    {val.title}
+                                </Link>
                                 <ul className="dropdown-content">
                                     {val.subLinks.map((subVal, subKey) => (
                                         <li key={subKey}>

@@ -3,6 +3,13 @@
     font-family: 'Courier New', Courier, monospace;
 }
 
+.blog-container p{
+    color: #ffffff;
+    font-family: 'Courier New', Courier, monospace;
+    
+}
+
+
 .blog-container{
     text-align: center;
 }

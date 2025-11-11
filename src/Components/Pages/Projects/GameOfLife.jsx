@@ -143,7 +143,7 @@ const GameOfLife = () => {
     <div className="game-container">
       <div className="game-grid">
         <div className="game-border">
-          <Sketch key={reset ? 'reset' : 'default'} setup={setup} draw={draw} />
+          <Sketch setup={setup} draw={draw} />
         </div>
       </div>
     </div>

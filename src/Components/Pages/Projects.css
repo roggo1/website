@@ -1,0 +1,14 @@
+.projects-container {
+
+}
+
+.projects-container h1 {
+  font-size: 2.5rem;
+  color: white;
+  margin-bottom: 15px;
+}
+
+.projects-container p {
+  font-size: 1.2rem;
+  color: white;
+}

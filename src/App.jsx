@@ -3,7 +3,9 @@ import { Routes, Route } from 'react-router-dom';
 import Sidebar from './Components/Sidebar';
 import Home from './Components/Pages/Home';
 import Blog from './Components/Pages/Blog';
-import GameOfLife from './Components/Pages/GameOfLife';
+import Projects from './Components/Pages/Projects';
+import GameOfLife from './Components/Pages/Projects/GameOfLife';
+import Fractals from './Components/Pages/Projects/Fractals';
 
 const App = () => {
   return (
@@ -18,9 +20,12 @@ const App = () => {
         }} /* Main content area with margin to avoid overlap with sidebar */
       >
         <Routes>
-          <Route path="/home" element={<Home />} />
+          <Route path="/" element={<Home />} />
+          <Route path="/Home" element={<Home />} />
           <Route path="/Blog" element={<Blog />} />
-          <Route path="/GameOfLife" element={<GameOfLife />} />
+          <Route path="/Projects" element={<Projects />} />
+          <Route path="/Projects/GameOfLife" element={<GameOfLife />} />
+          <Route path="/Projects/Fractals" element={<Fractals />} />
         </Routes>
       </div>
     </div>

@@ -7,10 +7,11 @@ export const SidebarData = [
     },
     {
         title: "Projects",
-        isDropdown: true, 
+        isDropdown: true,
+        link: "/Projects", // Add this so clicking the title goes to Projects page
         subLinks: [
-            { title: "Game of Life", link: "/GameOfLife" },
-            // Add more project links here
+            { title: "Fractals", link: "/Projects/Fractals" },
+            { title: "Game of Life", link: "/Projects/GameOfLife" },
         ],
     },
     {
