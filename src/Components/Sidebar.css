@@ -1,0 +1,111 @@
+.Sidebar {
+    width: 250px;
+    height: 100vh;
+    background-color: #004487;
+    position: fixed; /* Makes the sidebar fixed */
+    top: 0; /* Ensures it starts at the top of the viewport */
+    left: 0; 
+    z-index: 1000; 
+    border-radius: 15px;
+}
+
+.SidebarList {
+    height: 100%;
+    padding: 0;
+    width: 100%;
+    list-style: none;
+}
+
+.SidebarList .row {
+    width: auto;
+    height: 50px;
+    margin: 0%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: black;
+    transition: background-color 0.3s ease, color 0.3s ease, border-radius 0.3s ease; /* Add border-radius to transition */
+} 
+
+.SidebarList .row:hover {
+    background-color: #007bff; 
+    color: white; 
+    border-radius: 15px;
+    width: 85%;
+}
+
+.SidebarList .row a {
+    text-decoration: none; 
+    color: inherit; 
+    display: block; 
+    width: 100%;
+}
+
+/* Dropdown-specific styles */
+.SidebarList .dropdown {
+    position: relative;
+}
+
+.SidebarList .dropdown-title {
+    width: auto;
+    height: 50px;
+    margin: 0%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: black;
+    transition: background-color 0.3s ease, color 0.3s ease, border-radius 0.3s ease;
+}
+
+.SidebarList .dropdown-title:hover {
+    background-color: #007bff;
+    border-radius: 10px;
+}
+
+.SidebarList .dropdown-content {
+    display: none; 
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    background-color: #004487;
+    border-radius: 10px;
+}
+
+.SidebarList .dropdown:hover .dropdown-content {
+    display: block; 
+}
+
+.SidebarList .dropdown-content li {
+    padding: 10px 15px;
+}
+
+.SidebarList .dropdown-content li a {
+    padding: 10px 15px;
+    text-decoration: none;
+    display: block;
+    color: black;
+    transition: background-color 0.3s ease, color 0.3s ease, border-radius 0.3s ease;
+}
+
+.SidebarList .dropdown-content li a:hover {
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-image: linear-gradient(to right, #000000, #282522); 
+}
