@@ -12,7 +12,9 @@ You can pause/play the drawing and reset the canvas using the buttons provided.
 
 TO DO:
 1.Make better selection for parameters (sliders?) 
-2. 
+2. Add more fractal types (e.g., snowflakes, ferns)
+3. Just in general make it better
+4. Maybe add some stuff about the math behind fractals underneath
 */
 
 
